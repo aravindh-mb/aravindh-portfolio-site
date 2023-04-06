@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
 
 function Home() {
-  const skills = [
+   const skills = [
     {
       type:'frontend',
       skill:'HTML',
