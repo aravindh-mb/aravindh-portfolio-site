@@ -8,7 +8,6 @@ function Home() {
     {
       type:'frontend',
       skill:'HTML',
-      img:
     },
     {
       type:'frontend',
