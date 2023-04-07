@@ -12,14 +12,14 @@ import Avatar from '@mui/material/Avatar';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import GroupsIcon from '@mui/icons-material/Groups';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
+import ArchiveIcon from '@mui/icons-material/Archive';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import ICT from './assests/ICTa.jpeg'
-import portfolioImage from './assests/portfolio.png';
-import ReactCertification from './assests/react.jpeg'
-import WebdevCertification from './assests/webdev.jpeg'
+import ICT from './assests/ICTa.jpeg';
+import portfolioImage from './assests/portfolioImage.png';
+import ReactCertification from './assests/react.jpeg';
+import WebdevCertification from './assests/webdev.jpeg';
 import Diversity2Icon from '@mui/icons-material/Diversity2';
-import Link from '@mui/material/Link';
-
 
 function Home() {
   const skills = [
@@ -386,13 +386,12 @@ function Home() {
         className="tech_skills"
         sx={{ color: 'white', padding: '8px', marginLeft: { xs: '225px', md: "0px" }, border: '2px solid transparent', borderRadius: '10px', fontSize: '25px', width: '300px', height: '60px', background: 'linear-gradient(to right, #11998e, #38ef7d)' }}
       ><Diversity2Icon /> Contact</Box>
-         
             
          <Box>
             <Stack spacing={5} direction="row" sx={{display:'flex',alignItems:'center',justifyContent:'center',margin:'30px'}}>
                 <Button variant="contained" color="success"  href="./assests/aravindh-resume.pdf" download=""><ArchiveIcon/>Download Resume</Button>
                 <Button variant="contained"  href="https://github.com/aravindh-mb"><GitHubIcon/> GitHub</Button>
-                <Button variant="contained" href="https://www.linkedin.com/in/aravindh-a-685b2823b/"><LinkedInIcon/> LinkedInIn</Button>
+                <Button variant="contained" href="https://www.linkedin.com/in/aravindh-a-685b2823b/"><LinkedInIcon/> LinkedIn</Button>
                 <Button variant="contained" href ="mailto:aaravindh23cse@gmail.com"><EmailIcon/> Mail</Button>
             </Stack>
         </Box>
