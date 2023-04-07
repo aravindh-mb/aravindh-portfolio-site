@@ -387,14 +387,14 @@ function Home() {
         sx={{ color: 'white', padding: '8px', marginLeft: { xs: '225px', md: "0px" }, border: '2px solid transparent', borderRadius: '10px', fontSize: '25px', width: '300px', height: '60px', background: 'linear-gradient(to right, #11998e, #38ef7d)' }}
       ><Diversity2Icon /> Contact</Box>
          
-        <Box>
             
-            <GitHubIcon/> 
-            <Stack spacing={2} direction="row">
-      <Button variant="text" href="https://github.com/aravindh-mb"><GitHubIcon/> GitHub</Button>
-      <Button variant="contained" href="https://www.linkedin.com/in/aravindh-a-685b2823b/"><LinkedInIcon/> LinkedInIn</Button>
-      <Button variant="outlined" href ="mailto:aaravindh23cse@gmail.com"><GitHubIcon/> GitHub</Button>
-    </Stack>
+         <Box>
+            <Stack spacing={5} direction="row" sx={{display:'flex',alignItems:'center',justifyContent:'center',margin:'30px'}}>
+                <Button variant="contained" color="success"  href="./assests/aravindh-resume.pdf" download=""><ArchiveIcon/>Download Resume</Button>
+                <Button variant="contained"  href="https://github.com/aravindh-mb"><GitHubIcon/> GitHub</Button>
+                <Button variant="contained" href="https://www.linkedin.com/in/aravindh-a-685b2823b/"><LinkedInIcon/> LinkedInIn</Button>
+                <Button variant="contained" href ="mailto:aaravindh23cse@gmail.com"><EmailIcon/> Mail</Button>
+            </Stack>
         </Box>
          
     </>
