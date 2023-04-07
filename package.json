@@ -2,7 +2,7 @@
     "name": "codespaces-react",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https:''aravindh-mb.github.io/aravindh-portfolio-site/",
+    "homepage": "http://aravindh-mb.github.io/aravindh-portfolio-site/",
     "dependencies": {
         "@emotion/react": "^11.10.6",
         "@emotion/styled": "^11.10.6",
