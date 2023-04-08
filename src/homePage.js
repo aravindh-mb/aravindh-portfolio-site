@@ -21,6 +21,7 @@ import ReactCertification from './assests/react.jpeg';
 import WebdevCertification from './assests/webdev.jpeg';
 import Diversity2Icon from '@mui/icons-material/Diversity2';
 
+
 function Home() {
 
   const skills = [
@@ -141,7 +142,11 @@ function Home() {
 
   return (
     <>
-      <Stack fullWidth className="homePage" spacing={2} direction="row" sx={{ display: 'flex', margin: '30px', padding: '18px', alignItems: 'center', justifyContent: 'space-evenly', display: { xs: 'block', sm: 'flex' }, direction: { xs: 'column-reverse' }, marginTop: '60px' }}>
+<br></br>
+	<Box className="portfolio" component='div' sx=						  {{borderRadius:'50px',display:'flex',alignItems:'center',justifyContent:'center',margin:'auto',height:'50px',width:'300px',background:'white',marginLeft:{xs:'180px',md:'500px'}}}> <h3 sx={{color:'black',fontSize:'35px'}}> &#127881; Portfolio </h3></Box>
+
+      <Stack fullWidth className="homePage" spacing={2} direction="row" sx={{ display: 'flex', margin: '30px', padding: '18px', alignItems: 'center', justifyContent: 'space-evenly', display: { xs: 'block', sm: 'flex' }, direction: { xs: 'column-reverse' }, marginTop: '30px' }}>
+			
         <Box sx={{ width: '600px', padding: '10px' }}>
           <Typography className="homePage__text" variant="h3" color="dodgerBlue" sx={{ marginBottom: '20px', fontSize: { xs: '60px' } }} id="name">Aravindh Arumugam</Typography>
           <Typography variant="h6" sx={{ color: 'white', fontSize: { xs: '30px', md: '20px' } }}>Hello Everybody 👋 ! I am aravindh i have a knowledge in HTML , CSS , JavaScript and some famous UI library like React. And i can adapt any environment , looking for frontend developer role .  </Typography>
@@ -178,8 +183,8 @@ function Home() {
 
       <Box component={motion.div} initial={{ opacity: 0, scale: 0.5 }}
         animate={{ x: [50, 110, 50], opacity: 1, scale: 1 }} whileTap={{ scale: 0.5 }}
-        sx={{ marginBottom: '55px', width: { xs: '100%', md: '90%' }, padding: '10px', backgroundColor: 'white', marginLeft: { xs: '100px', md: '10px' }, marginTop: '20px', borderRadius: '10px' }}>
-        <List sx={{ marginBottom: '30px', width: '100%', maxWidth: 390, color: 'black', padding: '20px' }}>
+        sx={{ marginBottom: '55px', width: { xs: '570px', md: '90%' }, padding: '10px', backgroundColor: 'white', marginLeft: { xs: '5px', md: '10px' }, marginTop: '20px', borderRadius: '10px' }}>
+        <List sx={{ marginBottom: '30px', width: '300px', maxWidth: 390, color: 'black', padding: '20px' }}>
           <ListItem>
             <ListItemAvatar>
               <Avatar sx={{ background: 'linear-gradient(to right, #ec008c, #fc6767)' }}>
@@ -190,7 +195,7 @@ function Home() {
           </ListItem>
           <ListItem>
             <ListItemAvatar>
-              <Avatar sx={{ background: 'linear-gradient(to right, #ec008c, #fc6767)' }}>
+              <Avatar sx={{ background: 'linear-gradient(to right, #ec001a, #fc6767)' }}>
                 <SchoolIcon />
               </Avatar>
             </ListItemAvatar>
@@ -395,13 +400,16 @@ function Home() {
                 <Button variant="contained"  href="https://github.com/aravindh-mb"><GitHubIcon/> GitHub</Button>
                 <Button variant="contained" href="https://www.linkedin.com/in/aravindh-a-685b2823b/"><LinkedInIcon/> LinkedIn</Button>
 		<Button variant="contained" href="mailto:aaravindh23cse@gmail.com"><EmailIcon/> Email</Button>
-                <Button variant="contained" color="warning" href ="https://drive.google.com/file/d/1XGMwjyBtrV4Gi_bms6JVPS9wFCtMUmJ6/view?usp=drivesdk"><ArchiveIcon/> Resume</Button>
+                <Button variant="contained" color="warning" href ="https://drive.google.com/file/d/1XP_T1P7UuCzVVnu3rJZDoU0tliMcuRYL/view?usp=drivesdk"><ArchiveIcon/> Resume</Button>
 	
             </Stack>
         </Box>
 	<Box sx={{margin:'auto',padding:'10px',color:'grey'}}>
 		<Typography >Developed and deployed by Aravindh @2023</Typography>
 	</Box>
+
+        
+     
          
     </>
   );
