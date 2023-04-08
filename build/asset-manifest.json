@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/aravindh-portfolio-site/static/css/main.f01d05d0.css",
+    "main.js": "/aravindh-portfolio-site/static/js/main.2dd14979.js",
+    "static/media/portfolioImage.png": "/aravindh-portfolio-site/static/media/portfolioImage.03a6fc9f42101734d84b.png",
+    "static/media/webdev.jpeg": "/aravindh-portfolio-site/static/media/webdev.30b29f8a4a5b9ed0d75e.jpeg",
+    "static/media/react.jpeg": "/aravindh-portfolio-site/static/media/react.47481bd762f826d1bae4.jpeg",
+    "static/media/ICTa.jpeg": "/aravindh-portfolio-site/static/media/ICTa.64a0b644dc5fe99eaabc.jpeg",
+    "index.html": "/aravindh-portfolio-site/index.html",
+    "main.f01d05d0.css.map": "/aravindh-portfolio-site/static/css/main.f01d05d0.css.map",
+    "main.2dd14979.js.map": "/aravindh-portfolio-site/static/js/main.2dd14979.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f01d05d0.css",
+    "static/js/main.2dd14979.js"
+  ]
+}
