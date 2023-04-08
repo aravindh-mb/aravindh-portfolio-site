@@ -160,7 +160,6 @@ function Home() {
           }}
         >
           <Avatar sx={{ marginLeft: { xs: '30%' }, justifyContent: "center", alignItems: "center", width: { xs: 350, md: 250 }, height: { xs: 350, md: 250 } }} alt="aravindh pic" src="https://avatars.githubusercontent.com/u/83901906?v=4" />
-          <div className="duplicateAvatar"></div>
         </Box>
 
       </Stack>
@@ -226,7 +225,9 @@ function Home() {
           <Typography sx={{ margin: '8px', color: 'white' }} variant='h5'>Frontend Technologies</Typography>
           <Divider />
           <Box sx={{ display: 'flex', margin: '10px', flexWrap: 'wrap', padding: '8px' }}>
-            {skills.filter((skill) => skill.type === 'frontend').map((skill, i) => {
+            {
+            skills.filter((skill) => {
+              return skill.type === 'frontend'}).map((skill, i) => {
               return (
                 <Box sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', height: '200px', width: { xs: '500px', sm: '400px', md: '300px' }, backgroundColor: 'white', borderRadius: '10px', margin: '5px auto' }}>
                   <img src={skill.image} height='70px' width='70px' />
@@ -238,7 +239,6 @@ function Home() {
           </Box>
         </Box>
 
-
         <Box component={motion.div} initial={{ opacity: 0, scale: 0.5 }}
           transition={{ layout: { duration: 1, type: 'spring' } }}
           animate={{ x: [50, 110, 50] }}
@@ -247,7 +247,8 @@ function Home() {
           <Typography sx={{ margin: '8px', color: 'white' }} variant='h5'>Library's</Typography>
           <Divider />
           <Box sx={{ display: 'flex', margin: '10px', flexWrap: 'wrap', padding: '8px' }}>
-            {skills.filter((skill) => skill.type === 'Library').map((skill, i) => {
+            {skills.filter((skill) => {
+             return skill.type === 'Library'}).map((skill, i) => {
               return (
                 <Box sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', height: '200px', width: { xs: '500px', sm: '400px', md: '300px' }, backgroundColor: 'white', borderRadius: '10px', margin: '5px auto' }}>
                   <img src={skill.image} height='70px' width='70px' />
@@ -267,7 +268,8 @@ function Home() {
           <Typography sx={{ margin: '8px', color: 'white' }} variant='h5'>Backend Technologies</Typography>
           <Divider />
           <Box sx={{ display: 'flex', margin: '10px', flexWrap: 'wrap', padding: '8px' }}>
-            {skills.filter((skill) => skill.type === 'backend').map((skill, i) => {
+            {skills.filter((skill) => {
+              return skill.type === 'backend'}).map((skill, i) => {
               return (
                 <Box sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', height: '200px', width: { xs: '500px', sm: '400px', md: '300px' }, backgroundColor: 'white', borderRadius: '10px', margin: '5px auto' }}>
                   <img src={skill.image} height='70px' width='70px' />
@@ -287,7 +289,8 @@ function Home() {
           <Typography sx={{ margin: '8px', color: 'white' }} variant='h5'>Tool's</Typography>
           <Divider />
           <Box sx={{ display: 'flex', margin: '10px', flexWrap: 'wrap', padding: '8px' }}>
-            {skills.filter((skill) => skill.type === 'tools').map((skill, i) => {
+            {skills.filter((skill) => {
+              return skill.type === 'tools'}).map((skill, i) => {
               return (
                 <Box sx={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', height: '200px', width: { xs: '500px', sm: '400px', md: '300px' }, backgroundColor: 'white', borderRadius: '10px', margin: '5px auto' }}>
                   <img src={skill.image} height='70px' width='70px' />
@@ -338,10 +341,8 @@ function Home() {
         }}
         whileTap={{ scale: 0.5 }}
         className="tech_skills"
-        sx={{ margin: 'auto', color: 'white', padding: '8px', marginLeft: { xs: '125px', md: "560px" }, border: '2px solid transparent', borderRadius: '10px', fontSize: '30px', width: '300px', height: '60px', background: 'linear-gradient(to right, #7f00ff, #e100ff)' }}
-      ><GroupsIcon />  Project's</Box>
-         
-
+        sx={{ margin: 'auto', color: 'white', padding: '8px', marginLeft: { xs: '125px', md: "560px" }, border: '2px solid transparent', borderRadius: '10px', fontSize: '30px', width: '300px', height: '60px', background: 'linear-gradient(to right, #7f00ff, #e100ff)' }}>
+      <GroupsIcon />  Project's</Box>
          
         <Box sx={{display:{xs:'block',md:'flex',marginLeft:'0px',marginBottom:'20px'}}} component={motion.div} initial={{ opacity: 0, scale: 0.5 }}
           transition={{ layout: { duration: 1, type: 'spring' } }}
@@ -384,12 +385,12 @@ function Home() {
         }}
         whileTap={{ scale: 0.5 }}
         className="tech_skills"
-        sx={{ color: 'white', padding: '8px', marginLeft: { xs: '225px', md: "0px" }, border: '2px solid transparent', borderRadius: '10px', fontSize: '25px', width: '300px', height: '60px', background: 'linear-gradient(to right, #11998e, #38ef7d)' }}
-      ><Diversity2Icon /> Contact</Box>
+        sx={{ color: 'white', padding: '8px', marginLeft: { xs: '225px', md: "0px" }, border: '2px solid transparent', borderRadius: '10px', fontSize: '25px', width: '300px', height: '60px', background: 'linear-gradient(to right, #11998e, #38ef7d)' }}>
+      <Diversity2Icon /> Contact</Box>
             
-         <Box>
-            <Stack spacing={5} direction="row" sx={{display:'flex',alignItems:'center',justifyContent:'center',margin:'30px'}}>
-                <Button variant="contained" color="success"  href="./assests/aravindh-resume.pdf" download=""><ArchiveIcon/>Download Resume</Button>
+         <Box sx={{width:'700px',margin:'auto'}}>
+            <Stack spacing={5} direction="row" sx={{display:'flex',alignItems:'center',justifyContent:'center',margin:'50px'}}>
+                <Button variant="contained" color="error"  href="./assests/aravindh-resume.pdf" download=""><ArchiveIcon/>Download Resume</Button>
                 <Button variant="contained"  href="https://github.com/aravindh-mb"><GitHubIcon/> GitHub</Button>
                 <Button variant="contained" href="https://www.linkedin.com/in/aravindh-a-685b2823b/"><LinkedInIcon/> LinkedIn</Button>
                 <Button variant="contained" href ="mailto:aaravindh23cse@gmail.com"><EmailIcon/> Mail</Button>
