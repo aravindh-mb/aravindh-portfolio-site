@@ -22,6 +22,7 @@ import WebdevCertification from './assests/webdev.jpeg';
 import Diversity2Icon from '@mui/icons-material/Diversity2';
 
 function Home() {
+
   const skills = [
     {
       type: 'frontend',
@@ -390,12 +391,17 @@ function Home() {
             
          <Box sx={{width:'700px',margin:'auto'}}>
             <Stack spacing={5} direction="row" sx={{display:'flex',alignItems:'center',justifyContent:'center',margin:'50px'}}>
-                <Button variant="contained" color="error"  href="./assests/aravindh-resume.pdf" download=""><ArchiveIcon/>Download Resume</Button>
+                
                 <Button variant="contained"  href="https://github.com/aravindh-mb"><GitHubIcon/> GitHub</Button>
                 <Button variant="contained" href="https://www.linkedin.com/in/aravindh-a-685b2823b/"><LinkedInIcon/> LinkedIn</Button>
-                <Button variant="contained" href ="mailto:aaravindh23cse@gmail.com"><EmailIcon/> Mail</Button>
+		<Button variant="contained" href="mailto:aaravindh23cse@gmail.com"><EmailIcon/> Email</Button>
+                <Button variant="contained" color="warning" href ="https://drive.google.com/file/d/1XGMwjyBtrV4Gi_bms6JVPS9wFCtMUmJ6/view?usp=drivesdk"><ArchiveIcon/> Resume</Button>
+	
             </Stack>
         </Box>
+	<Box sx={{margin:'auto',padding:'10px',color:'grey'}}>
+		<Typography >Developed and deployed by Aravindh @2023</Typography>
+	</Box>
          
     </>
   );
